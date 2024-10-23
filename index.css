@@ -1,0 +1,159 @@
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+header img {
+ border-radius: 100%;
+ margin-top: 20px;
+ height:150px;
+ width:150px;
+ filter: drop-shadow(0px 0px 30px #ff000043);
+}
+p,h1,h2,h3,li{
+  font-family: "LXGW WenKai Mono TC", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.20em;
+}
+h2,h3 {
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+img {
+  border-radius: 10%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.goal {
+  background-color: #1f9ffa42; 
+  padding: 10px 20px; 
+  text-align: center;
+  margin: 20px auto; 
+  width: 80%; 
+  border-radius: 20px;
+
+ }
+
+ 
+ .goal-div {
+  text-align: left;
+ }
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+.about {
+  background-color: #fedddd;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  filter: drop-shadow(10px 10px 25px  #707070);
+}
+
+
+.about {
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about h2 {
+  margin-top: 0;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 20px;
+}
+.about-text {
+  text-align: left;
+}
+.about h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about aside {
+  background-color: #ffc2bd; 
+  padding: 5%;
+  margin: 20px 0;
+  border-radius: 20px;
+  filter: drop-shadow(5px 10px 10px  #707070cc);
+}
+.about img {
+  height: 375px;
+  width: 500px;
+  filter: drop-shadow(5px 10px 10px  #707070cc);
+}
+
+.country {
+  padding: 20px;
+  text-align: center;
+  background-color: #1c21b153; 
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 20px;
+  
+}
+
+.country nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.country img {
+  border-radius: 5px;
+  width: 85px;
+  height: 72px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+footer img {
+  height:80px;
+  width:200px;
+  filter: drop-shadow(0px 0px 30px  #ffffff48);
+}
