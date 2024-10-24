@@ -4,26 +4,34 @@ header {
   padding: 20px 0;
   text-align: center;
 }
+
 header img {
- border-radius: 100%;
- margin-top: 20px;
- height:150px;
- width:150px;
- filter: drop-shadow(0px 0px 30px #ff000043);
+  border-radius: 100%;
+  margin-top: 20px;
+  height: 150px;
+  width: 150px;
+  filter: drop-shadow(0px 0px 30px #ff000043);
 }
+
 .header {
   position: absolute;
   left: 0;
   right: 0;
 }
 
-p,h1,h2,h3,li{
+p,
+h1,
+h2,
+h3,
+li {
   font-family: "LXGW WenKai Mono TC", monospace;
   font-weight: 400;
   font-style: normal;
   font-size: 1.20em;
 }
-h2,h3 {
+
+h2,
+h3 {
   font-weight: 700;
 }
 
@@ -45,20 +53,20 @@ img {
 }
 
 .goal {
-  background-color: #1f9ffa42; 
-  padding: 10px 20px; 
+  background-color: #1f9ffa42;
+  padding: 10px 20px;
   text-align: center;
-  margin: 20px auto; 
-  width: 80%; 
+  margin: 20px auto;
+  width: 80%;
   border-radius: 20px;
 
- }
+}
 
- .goal-div {
+.goal-div {
   text-align: left;
-  margin-left: 40px; 
-  margin-right: 40px; 
- }
+  margin-left: 40px;
+  margin-right: 40px;
+}
 
 .menu ul {
   list-style: none;
@@ -66,10 +74,12 @@ img {
   padding: 0;
   text-align: center;
 }
+
 .menu li {
   display: inline-block;
   margin: 0 10px;
 }
+
 .menu a {
   color: #fff;
   text-decoration: none;
@@ -83,6 +93,7 @@ body {
   background-color: #f4f4f4;
   color: #333;
 }
+
 .about {
   background-color: #fedddd;
   padding: 40px 0;
@@ -90,48 +101,55 @@ body {
   justify-content: center;
   align-items: center;
 
-  filter: drop-shadow(10px 10px 25px  #707070);
+  filter: drop-shadow(10px 10px 25px #707070);
 }
+
 .about-content {
   display: flex;
   align-items: center;
   gap: 100px;
   padding: 20px;
 }
+
 .about-text {
   text-align: left;
-  margin-left: 40px; 
-  margin-right: 40px; 
+  margin-left: 40px;
+  margin-right: 40px;
 }
-.about h1, h2, h3 {
+
+.about h1,
+h2,
+h3 {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .about h2 {
   margin-top: 0;
 }
 
 .about aside {
-  background-color: #ffc2bd; 
+  background-color: #ffc2bd;
   padding: 5%;
   margin: 20px 0;
   border-radius: 20px;
-  filter: drop-shadow(5px 10px 10px  #707070cc);
+  filter: drop-shadow(5px 10px 10px #707070cc);
 }
+
 .about img {
   height: 375px;
   width: 500px;
-  filter: drop-shadow(5px 10px 10px  #707070cc);
+  filter: drop-shadow(5px 10px 10px #707070cc);
 }
 
 .country {
   padding: 20px;
   text-align: center;
-  background-color: #1c21b153; 
+  background-color: #1c21b153;
   margin: 20px auto;
   width: 80%;
   border-radius: 20px;
-  
+
 }
 
 .country nav {
@@ -155,67 +173,84 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
 footer img {
-  height:80px;
-  width:200px;
-  filter: drop-shadow(0px 0px 30px  #ffffff48);
+  height: 80px;
+  width: 200px;
+  filter: drop-shadow(0px 0px 30px #ffffff48);
 }
+
 .footer {
   position: absolute;
   left: 0;
   right: 0;
 }
+
 @media screen and (max-width: 1110px) {
   header img {
-    height:300px;
-    width:300px;
+    height: 300px;
+    width: 300px;
     filter: drop-shadow(0px 0px 30px #ff000043);
-   }
+  }
+
   .about-content {
-    display:grid;
-    align-items:left;
+    display: grid;
+    align-items: left;
     gap: 100px;
     padding: 20px;
   }
+
   .about-text {
     text-align: left;
     margin-top: -40px;
   }
+
   .about img {
     height: 470px;
     width: 625px;
-  
+
   }
+
   .country img {
     border-radius: 5px;
     width: 170px;
     height: 144px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  
   }
+
   footer pre {
     display: none;
   }
+
   footer img {
-    height:160px;
-    width:400px;
-    filter: drop-shadow(0px 0px 30px  #ffffff48);
+    height: 160px;
+    width: 400px;
+    filter: drop-shadow(0px 0px 30px #ffffff48);
   }
+
   h1 {
     font-size: 4.5em;
   }
+
   h2 {
     font-size: 2.5rem;
   }
-  p,h3,li{
+
+  p,
+  h3,
+  li {
     font-size: 3.20em;
   }
 }
+
 @media print {
-  .about-aside, .about , .goal{
-    background-color: white;
+
+  .about-aside,
+  .about,
+  .goal {
+    background-color: rgb(237, 237, 237);
     filter: drop-shadow(0px 0px 30px #ffffff);
-}
-  
-  
+  }
+
+
 }
