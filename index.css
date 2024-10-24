@@ -59,10 +59,12 @@ img {
   margin: 20px auto;
   width: 80%;
   border-radius: 20px;
+  word-spacing: 1em;
+  line-height: normal;
 
 }
 
-.goal-div {
+.goal__div {
   text-align: left;
   margin-left: 40px;
   margin-right: 40px;
@@ -104,14 +106,14 @@ body {
   filter: drop-shadow(10px 10px 25px #707070);
 }
 
-.about-content {
+.about__content {
   display: flex;
   align-items: center;
   gap: 100px;
   padding: 20px;
 }
 
-.about-text {
+.about__text {
   text-align: left;
   margin-left: 40px;
   margin-right: 40px;
@@ -193,14 +195,14 @@ footer img {
     filter: drop-shadow(0px 0px 30px #ff000043);
   }
 
-  .about-content {
+  .about__content {
     display: grid;
     align-items: left;
     gap: 100px;
     padding: 20px;
   }
 
-  .about-text {
+  .about__text {
     text-align: left;
     margin-top: -40px;
   }
@@ -245,7 +247,7 @@ footer img {
 
 @media print {
 
-  .about-aside,
+  .about__aside,
   .about,
   .goal {
     background-color: rgb(237, 237, 237);

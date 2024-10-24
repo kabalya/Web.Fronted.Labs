@@ -85,7 +85,7 @@ body {
 }
 
 .dish {
-
+    text-indent: 10px;
     background-color: #fedddd;
     padding: 40px 40px;
     margin: 40px auto;
@@ -101,12 +101,16 @@ body {
     text-decoration: underline;
     text-decoration-color: rgb(0, 0, 0);
 }
+.dish p {
+    text-indent: 5%;
+}
 
 .dish__category {
     background-color: #f05f5f;
     padding: 10px 10px;
     margin: 10px auto;
     text-align: center;
+    text-transform: uppercase;
     align-items: center;
     border-radius: 20px;
     width: 20%;
@@ -115,7 +119,6 @@ body {
 }
 
 .debt {
-
     background-color: #fedddd;
     padding: 40px 40px;
     margin: 40px auto;
@@ -170,11 +173,14 @@ footer img {
     right: 0;
 }
 
-.table-container {
+.table__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     margin: 20px;
+}
+thead, tbody {
+    display: contents;
 }
 
 table {
@@ -189,6 +195,9 @@ th {
     padding: 5px;
     text-align: center;
 }
+tr{
+    display:contents;
+}
 
 td {
     background-color: #ffaec126;
@@ -201,11 +210,11 @@ td:first-child {
     background-color: #ffaec1a1;
 }
 
-table tr:nth-child(even) {
+tbody tr:nth-child(even) {
     background-color: #ffd90017;
 }
 
-table tr:nth-child(odd) {
+tbody tr:nth-child(odd) {
     background-color: #0004ff17;
 }
 
