@@ -190,7 +190,7 @@ table tr:nth-child(odd) {
        }
     .dish__category {
         width: 40%;
-        font-size:2.5em;  
+        font-size:3em;  
     }
     footer pre {
         display: none;
@@ -204,7 +204,7 @@ table tr:nth-child(odd) {
         font-size: 4.5em;
       }
       h2 {
-        font-size: 2.5rem;
+        font-size: 2.5em;
       }
       p,h3{
         font-size: 3.20em;
@@ -215,6 +215,12 @@ table tr:nth-child(odd) {
       ul li {
         font-size:1em;
       }
+}
+@media print {
+    .dish {
+        background-color: white;
+    }
+    
 }
 
   
