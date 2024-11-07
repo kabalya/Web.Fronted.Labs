@@ -51,6 +51,35 @@ img {
   margin: 0 auto;
   padding: 20px;
 }
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+.menu a {
+  color: #fff; 
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.menu a:hover {
+  background-color: #464646;
+  color: white;
+}
+.active {
+  font-weight: bold;
+  color: red;
+}
 
 .goal {
   background-color: #1f9ffa42;
@@ -68,24 +97,6 @@ img {
   text-align: left;
   margin-left: 40px;
   margin-right: 40px;
-}
-
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.menu li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.menu a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 body {
