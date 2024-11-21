@@ -9,8 +9,15 @@ table {
     text-align: left;
   }
   th {
-    background-color: #f2f2f2;
+    background-color: #d8fcff;
+  }
+  td{
+    background-color: #84d4ff5b;
   }
   form {
     margin: 0 50px;
+
+  }
+  body{
+    background-color: rgba(178, 255, 255, 0.605);
   }
