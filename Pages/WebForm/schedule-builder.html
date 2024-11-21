@@ -7,8 +7,10 @@
     <meta name="description" content="Вавилон-лучший выбор ознакомления с рецептами блюд разных стран и народов!">
     <link rel="shortcut icon" href="../../images/BabylonIcon.ico" />
     <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
-    <title>Вавилон</title>
+    <title>Конструктор питания Вавилона</title>
+    <script src="script.js"></script>
     <script src='../../script.js'></script>
     <script src='../../script_curent_position.js'></script>
 </head>
@@ -24,54 +26,48 @@
         <nav class="menu">
             <ul>
                 <li><a href="../../index.html#main" class="nav-link">Главная</a></li>
-                <li><a href="#about" class="nav-link">О нас</a></li>
-                <li><a href="Country.html#country" class="nav-link">Выбор страны</a></li>
+                <li><a href="../MainPageSideStory/AboutUs.html#about" class="nav-link">О нас</a></li>
+                <li><a href="#calculator" class="nav-link">Калькулятор Калорий</a></li>
+                <li><a href="../MainPageSideStory/Country.html#country" class="nav-link">Выбор страны</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <div class="goal">
-            <h2>Наша цель</h2>
-            <div class="goal__div">
-                <p> Вся команда Babylon's legacy старается сделать мир лучше, популяризируя удивительные блюда со всех
-                    уголков мира. Наш сайт ищет уникальные рецепты со всего мира. </p>
-                <p> Пускай и ваш рецепт станет частью истории!</p>
+    <main><body>
 
-            </div>
-        </div>
-
-        <section id="about" class="about">
-            <div class="container">
-                <div class="about__content">
-                    <img src="../../images/Babylon_Foto.jpg" alt="Пейзаж Вавилона">
-                    <div class="about__text">
-                        <h2>Кто мы?</h2>
-                        <p>
-                            Babylon's legacy — это невообразимо огромный и удивительный мир, полный рецептов стран и
-                            народов мира.
-                            От далеких земель Азии до холодных вод Атлантики, от загадочных теплых морей Индии до саванн
-                            Африки
-                            мы собрали для вас рецепты стран народов мира.
-                        </p>
-                        <aside>
-                            <h3>Будьте внимательны!</h3>
-                            <p>
-                                Предупреждаем, рецепты могут отличаться в зависимости от региона, семьи или повара.
-                                Мы стараемся указывать основные ингредиенты и количество специй, однако соль, перец и прочие
-                                специи нужно класть по вкусу.
-                                Мы приводим информацию о стране происхождения блюда, основываясь на наиболее
-                                распространенных представлениях о национальной кухне.
-                                Однако, границы между кухнями не всегда четкие, и некоторые блюда могут быть популярны в
-                                нескольких странах.
-                            </p>
-                            <p>Просим отнестись с пониманием.</p>
-                        </aside>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        <h2>Введите параметры для создания таблицы</h2>
+        
+        <form id="foodForm">
+            <label for="dishName">Название блюда:</label>
+            <input type="text" id="dishName" required><br><br>
+            
+            <label for="protein">Количество белка (г):</label>
+            <input type="number" id="protein" required><br><br>
+            
+            <label for="carbs">Количество углеводов (г):</label>
+            <input type="number" id="carbs" required><br><br>
+            
+            <label for="fats">Количество жиров (г):</label>
+            <input type="number" id="fats" required><br><br>
+        
+            <button type="button" onclick="addRow()">Добавить в таблицу</button>
+            <button type="button" onclick="clearTable()">Очистить таблицу</button>
+        </form>
+        
+        <h2>Таблица питания</h2>
+        <table id="nutritionTable">
+            <thead>
+                <tr>
+                    <th>Название блюда</th>
+                    <th>Белки (г)</th>
+                    <th>Углеводы (г)</th>
+                    <th>Жиры (г)</th>
+                    <th>Калории</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        </body>
     </main>
 
     <footer id="contacts">

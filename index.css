@@ -78,6 +78,7 @@ img {
 }
 .active {
   font-weight: bold;
+  background-color: #f05f5f;
   color: red;
 }
 
@@ -136,6 +137,7 @@ h3 {
   text-align: center;
   margin-bottom: 20px;
 }
+
 
 .about h2 {
   margin-top: 0;

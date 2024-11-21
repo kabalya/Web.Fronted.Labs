@@ -5,6 +5,7 @@ header {
     text-align: center;
 }
 
+
 .tips {
     opacity: 0;
     display: none;
@@ -80,6 +81,7 @@ ul li {
     background-color: #464646;
     color: white;
   }
+
 
 .container {
     margin: 0 auto;
