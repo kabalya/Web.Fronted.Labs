@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
             let response;
             const randomNum = Math.random();
 
-            if (randomNum < 0.5) {
+            if (randomNum < 0.5){
                 response = await fetch('https://jsonplaceholder.typicode.com/comments?_start=100');
-            } else {
+            } else{
                 response = await fetch('https://jsonplaceholder.typicode.com/comments?_end=200');
             }
 
@@ -37,8 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `).join('');
     }
-
-    // Обработчик события нажатия кнопки
     loadCommentsButton.addEventListener('click', () => {
         preloader.style.display = 'block';
         fetchComments();
