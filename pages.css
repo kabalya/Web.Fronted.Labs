@@ -197,12 +197,12 @@ table {
     display: grid;
     width: 100%;
     border-collapse: collapse;
-    grid-template-columns: repeat(5, 1fr); /* Сетка для 5 колонок */
-    overflow-x: auto; /* Если колонок много, разрешаем прокрутку */
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
 }
 
 thead {
-    display: contents; /* Чтобы заголовок и тело были частью одной сетки */
+    display: contents;
 }
 
 tbody {

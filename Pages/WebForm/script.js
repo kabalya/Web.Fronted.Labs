@@ -40,6 +40,8 @@ function addRow() {
     newRow.querySelector('.calories').textContent = calories.toFixed(2);
 
     document.getElementById('tableBody').appendChild(newRow);
+    const dishData = { name: dishName, protein, carbs, fats, calories };
+    saveToLocalStorage(dishData);
 }
 
 function addToTable(dishData) {
@@ -55,7 +57,6 @@ function addToTable(dishData) {
 
 function saveToLocalStorage(dishData) {
     let dishes = JSON.parse(localStorage.getItem('dishes')) || [];
-    
     dishes.push(dishData);
     localStorage.setItem('dishes', JSON.stringify(dishes));
 }

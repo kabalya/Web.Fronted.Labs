@@ -30,13 +30,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderComments(comments) {
-        commentsContainer.innerHTML = comments.map(comment => `
-            <div class="comment">
-                <h4>${comment.name} (${comment.email})</h4>
-                <p>${comment.body}</p>
-            </div>
-        `).join('');
+        commentsContainer.innerHTML = '';
+        for (const comment of comments) {
+            const commentElem = document.createElement('div');
+            commentElem.classList.add('comment');
+    
+            const nameElem = document.createElement('h4');
+            const textElem = document.createElement('p');
+    
+            nameElem.textContent = `${comment.name} (${comment.email})`;
+            textElem.textContent = comment.body;
+    
+            commentElem.append(nameElem, textElem);
+            commentsContainer.append(commentElem);
+          }
     }
+
     loadCommentsButton.addEventListener('click', () => {
         preloader.style.display = 'block';
         fetchComments();
