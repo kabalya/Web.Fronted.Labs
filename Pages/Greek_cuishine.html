@@ -10,6 +10,7 @@
     <title>Греческая кухня | Babylon</title>
     <script src='../script.js'></script>
     <script src="../script_page.js"></script>
+    <script src="../script_comments.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -257,45 +258,54 @@
                             Как вы все знаете в V веке нашей эры началось Средневековье. Началось оно именно в V веке не с проста. Тогда пала Западная Римская империя, которую мы сейчас называем Византией. Та самая держава, те самые города в которых познавали христианство наши предки сейчас не существует. Ближайшим наследником Византии является Греция. Помоги благому делу, популяризируй греческие блюда для возрождения нашего южного союзника.
                         </p>
                         <p>Экономика Греции</p>
-                        <table>
-                                <tr>
-                                    <th>Год</th>
-                                    <th>ВВП (ППС) млрд евриков</th>
-                                    <th>ВВП (ППС) на душу. млрд евриков</th>
-                                    <th>Рост ВВП</th>
-                                    <th>Уровень безработицы</th>
-                                </tr>
-                                <tr>
-                                    <td>2015</td>
-                                    <td>185</td>
-                                    <td>17,042</td>
-                                    <td>-0,3%</td>
-                                    <td>24,9</td>
-                                </tr>
-                                <tr>
-                                    <td>2016</td>
-                                    <td>184</td>
-                                    <td>17,118</td>
-                                    <td>-0,2%</td>
-                                    <td>23,6</td>
-                                </tr>
-                                <tr>
-                                    <td>2017</td>
-                                    <td>187</td>
-                                    <td>17,374</td>
-                                    <td>+1,4%</td>
-                                    <td>21,5</td>
-                                </tr>
-                                <tr>
-                                    <td>2018</td>
-                                    <td>190</td>
-                                    <td>17,765</td>
-                                    <td>+2,3%</td>
-                                    <td>19,3</td>
-                                </tr>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Год</th>
+                                <th>ВВП (ППС) млрд евриков</th>
+                                <th>ВВП (ППС) на душу. млрд евриков</th>
+                                <th>Рост ВВП</th>
+                                <th>Уровень безработицы</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>2015</td>
+                                <td>185</td>
+                                <td>17,042</td>
+                                <td>-0,3%</td>
+                                <td>24,9</td>
+                            </tr>
+                            <tr>
+                                <td>2016</td>
+                                <td>184</td>
+                                <td>17,118</td>
+                                <td>-0,2%</td>
+                                <td>23,6</td>
+                            </tr>
+                            <tr>
+                                <td>2017</td>
+                                <td>187</td>
+                                <td>17,374</td>
+                                <td>+1,4%</td>
+                                <td>21,5</td>
+                            </tr>
+                            <tr>
+                                <td>2018</td>
+                                <td>190</td>
+                                <td>17,765</td>
+                                <td>+2,3%</td>
+                                <td>19,3</td>
+                            </tr>
+                            </tbody>
                         </table>
                     </div>
             </section>
+
+            <img src="../giphy.webp" id="preloader"  alt="StarCraft Baza">
+            <button id="loadCommentsButton">Загрузить комментарии</button>
+            <div id="commentsContainer"></div>
+
     </main>
 
     <footer id="contacts">

@@ -39,16 +39,16 @@
         
         <form id="foodForm">
             <label for="dishName">Название блюда:</label>
-            <input type="text" id="dishName" required><br><br>
+            <input name="foodname" type="text" id="dishName" placeholder="Введи название шедевра!" required><br><br>
             
             <label for="protein">Количество белка (г):</label>
-            <input type="number" id="protein" required><br><br>
+            <input name="protein" type="number" id="protein" placeholder="0" required min="0" max="9999999"><br><br>
             
             <label for="carbs">Количество углеводов (г):</label>
-            <input type="number" id="carbs" required><br><br>
+            <input name="carbs" type="number" id="carbs" placeholder="0" required min="0" max="9999999"><br><br>
             
             <label for="fats">Количество жиров (г):</label>
-            <input type="number" id="fats" required><br><br>
+            <input name="fat" type="number" id="fats" placeholder="0" required min="0" max="9999999"><br><br>
         
             <button type="button" onclick="addRow()">Добавить в таблицу</button>
             <button type="button" onclick="clearTable()">Очистить таблицу</button>
@@ -65,8 +65,17 @@
                     <th>Калории</th>
                 </tr>
             </thead>
-            <tbody></tbody>
+            <tbody id="tableBody"></tbody>
         </table>
+        <template id="rowTemplate">
+            <tr>
+                <td class="dish-name"></td>
+                <td class="protein"></td>
+                <td class="carbs"></td>
+                <td class="fats"></td>
+                <td class="calories"></td>
+            </tr>
+        </template>
         </body>
     </main>
 
