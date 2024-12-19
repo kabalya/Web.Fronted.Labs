@@ -11,8 +11,13 @@
     <script src='../script.js'></script>
     <script src="../script_page.js"></script>
     <script src="../script_comments.js"></script>
+    <link rel="stylesheet" href="../css-lab7.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
+    <div id="particles-js"></div>
+
     <header>
         <div class ="container">
             <h1>Русская кухня</h1>
@@ -281,6 +286,13 @@
         <button id="loadCommentsButton">Загрузить комментарии</button>
         <div id="commentsContainer"></div>
 
+        <template id="commentTemplate">
+            <div class="comment">
+                <h4></h4>
+                <p></p>
+            </div>
+        </template>
+
     </main>
 
     <footer id="contacts">
@@ -303,5 +315,10 @@
             <img src="../images/Itmo_slogan.png" alt="Слоган Итмо">
         </div>
     </footer>
+
+    <!-- Настройка particles.js -->
+     <script src="../AAA.js"></script>
+    
+
 </body>
 </html>

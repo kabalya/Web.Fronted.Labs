@@ -12,8 +12,22 @@
     <script src="../script_page.js"></script>
     <script src="../script_comments.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css-lab7.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+    <style>
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 6400px;
+            z-index: -1; /* Убедитесь, что частицы находятся на заднем плане */
+        }
+
+    </style>
 </head>
 <body>
+    <div id="particles-js"></div>
     <header>
         <div class ="container">
            <h1>Греческая кухня</h1>
@@ -306,6 +320,13 @@
             <button id="loadCommentsButton">Загрузить комментарии</button>
             <div id="commentsContainer"></div>
 
+            <template id="commentTemplate">
+                <div class="comment">
+                    <h4></h4>
+                    <p></p>
+                </div>
+            </template>
+
     </main>
 
     <footer id="contacts">
@@ -328,5 +349,6 @@
             <img src="../images/Itmo_slogan.png" alt="Слоган Итмо">
         </div>
     </footer>
+    <script src="../AAA.js"></script>
 </body>
 </html>
