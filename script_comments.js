@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
         for (const comment of comments) {
             const commentElem = commentTemplate.content.cloneNode(true);
             
-            // Заполнение шаблона данными комментария
             commentElem.querySelector('h4').textContent = `${comment.name} (${comment.email})`;
             commentElem.querySelector('p').textContent = comment.body;
 
