@@ -81,7 +81,6 @@ ul li {
     color: white;
   }
 
-
 .container {
     margin: 0 auto;
     padding: 20px;
@@ -230,7 +229,6 @@ tr:nth-child(odd) td {
     font-weight: bold;
 }
 
-
 #preloader {
     display: none;
     margin-top: 20px;
@@ -262,8 +260,6 @@ tr:nth-child(odd) td {
     border-radius: 20px;
     filter: drop-shadow(10px 10px 15px #7070706b);
 }
-
-
 
 @media screen and (max-width: 1110px) {
     header img {
